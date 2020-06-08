@@ -7,12 +7,13 @@ using Newtonsoft.Json;
 // [JsonSubtypes.KnownSubType(typeof(Pianist), "Piano")]
 public abstract class Musician
 {
+    [JsonRequired]
     public abstract string InstrumentType { get; }
     public string FirstName { get; set; }
     public string LastName { get; set; }
 
     public class Guitarist : Musician
-    {
+    {        
         public override string InstrumentType { get; } = "Guitar";
         public int StringCount { get; set; }
         public bool CanPlayWonderwall { get; set; }

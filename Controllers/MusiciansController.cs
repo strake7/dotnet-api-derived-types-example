@@ -5,5 +5,6 @@ using Microsoft.AspNetCore.Mvc;
 [Route("musicians")]
 public class MusiciansController : ControllerBase
 {
+    [HttpPost]
     public ActionResult Post(IEnumerable<Musician> musiciansToCreate) => Accepted(musiciansToCreate);
 }
