@@ -1,0 +1,18 @@
+POST http://localhost:5000/musicians HTTP/1.1
+Content-Type: application/json
+
+[
+  {
+    "instrumentType": "Guitar",
+    "stringCount": 6,
+    "canPlayWonderwall": true,
+    "firstName": "Noel",
+    "lastName": "Gallagher"
+  },
+  {
+    "instrumentType": "Piano",
+    "handSpanRating": 15,
+    "firstName": "Claude",
+    "lastName": "Debussy"
+  }
+]
